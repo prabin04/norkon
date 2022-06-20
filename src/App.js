@@ -4,27 +4,31 @@ import * as d3 from "d3"
 
 function App() {
 
-    //  1] Setup Initial data and settings ------------//
+    //  1] Custom data and settings ------------//
+
+    // Comment --> Couldn't fetch the socket endpoint API
+    // API Endpoint Request URL: wss://norkon.azurewebsites.net/Pulse/ 
+
 
     const initialData = [
       {
-        name: "Car",
+        name: "10am",
         value: 10,
       },
       {
-        name: "Food",
+        name: "11am",
         value: 3,
       },
       {
-        name: "Telephone",
+        name: "12pm",
         value: 9,
       },
       {
-        name: "Electricity",
+        name: "13pm",
         value: 7,
       },
       {
-        name: "Cinema",
+        name: "14pm",
         value: 7,
       },
     ];
