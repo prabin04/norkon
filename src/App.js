@@ -11,24 +11,24 @@ function App() {
 
 
     const initialData = [
-      {
-        name: "10am",
+       {
+        name: "Car",
         value: 10,
       },
       {
-        name: "11am",
+        name: "Food",
         value: 3,
       },
       {
-        name: "12pm",
+        name: "Telephone",
         value: 9,
       },
       {
-        name: "13pm",
+        name: "Electricity",
         value: 7,
       },
       {
-        name: "14pm",
+        name: "Cinema",
         value: 7,
       },
     ];
