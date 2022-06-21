@@ -4,6 +4,26 @@ import * as d3 from "d3"
 
 function App() {
 
+    
+    const ws = new WebSocket('wss://norkon.azurewebsites.net/Pulse/');
+    const initWebsocket = () => {
+    ws.onopen = () => {
+      console.log('WebSocket Client Connected');
+    };
+    ws.onmessage = (event) => {
+      const response = JSON.parse(event.data);
+      console.log('Live data ', response);
+      console.log(event);
+    };
+    ws.onclose = () => {
+      initWebsocket();
+    };
+  };
+
+  useEffect(() => {
+    initWebsocket();
+    return () => ws.close;
+}, );
     //  1] Custom data and settings ------------//
 
     // Comment --> Couldn't fetch the socket endpoint API
